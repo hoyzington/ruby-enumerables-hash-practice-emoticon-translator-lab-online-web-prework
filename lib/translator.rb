@@ -8,7 +8,6 @@ def load_library(string)
   lib.each do |key, value|
     hash[:get_meaning][value[1]] = key
     hash[:get_emoticon][value[0]] = value[1]
-    end
   end
   hash
 end
