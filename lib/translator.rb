@@ -1,9 +1,9 @@
 require "yaml"
 
 def load_library(string)
-  hash = {get_meaning: [], get_emoticon: []}
   lib = YAML.load_file(string)
-  lib.each {|key, value|
+hash = {get_meaning: [], get_emoticon: []}
+    lib.each {|key, value|
     hash[get_meaning] << key
     hash[get_emoticon] << value
   }
