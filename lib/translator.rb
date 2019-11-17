@@ -7,7 +7,7 @@ require "yaml"
 
 
 def load_library
-  
+  emo = YAML.load_file
 end
 
 
