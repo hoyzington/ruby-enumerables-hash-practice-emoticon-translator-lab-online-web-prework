@@ -6,9 +6,9 @@ def load_library(string)
   hash[:get_meaning] = {}
   hash[:get_emoticon] = {}
   lib.each do |key, value|
-    value.each do |eng, jap|
-        hash[:get_meaning][jap] = key
-        hash[:get_emoticon][eng] = jap
+    value.each do |eng, otr|
+        hash[:get_meaning][otr] = key
+        hash[:get_emoticon][eng] = otr
     end
   end
   hash
