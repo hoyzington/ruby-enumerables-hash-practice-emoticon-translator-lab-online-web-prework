@@ -5,8 +5,8 @@ def load_library(string)
   hash = {get_meaning: {}, get_emoticon: {}}
   lib.each do |key, value|
     value.each do |eng, jap|
-        hash[:get_meaning] = {jap: key}
-        hash[:get_emoticon] = {eng: jap}
+        hash[:get_meaning][jap] = key
+        hash[:get_emoticon][eng] = jap
     end
   end
   hash
