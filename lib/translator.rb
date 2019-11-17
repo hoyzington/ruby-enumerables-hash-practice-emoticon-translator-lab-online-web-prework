@@ -2,7 +2,7 @@ require "yaml"
 
 def load_library(string)
   lib = YAML.load_file(string)
-  hash = {get_meaning: {}, get_emoticon: {}}
+  hash = {}
   lib.each do |key, value|
     value.each do |eng, jap|
         hash[:get_meaning][jap] = key
