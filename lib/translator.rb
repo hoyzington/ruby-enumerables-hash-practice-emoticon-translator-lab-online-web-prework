@@ -4,8 +4,8 @@ def load_library(string)
   lib = YAML.load_file(string)
   hash = {get_meaning: [], get_emoticon: []}
     lib.each {|key, value|
-    hash[get_meaning] << key
-    hash[get_emoticon] << value
+    hash[:get_meaning] << key
+    hash[:get_emoticon] << value
   }
   hash
 end
