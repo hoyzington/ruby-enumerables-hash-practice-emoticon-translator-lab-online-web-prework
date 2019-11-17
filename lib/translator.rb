@@ -22,3 +22,4 @@ def get_english_meaning
   
 end
 
+# "./lib/emoticons.yml"
