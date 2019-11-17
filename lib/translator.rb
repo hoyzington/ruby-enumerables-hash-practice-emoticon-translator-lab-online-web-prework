@@ -14,6 +14,7 @@ end
 
 
 def get_japanese_emoticon(yaml, emoticon)
+  ref = load_library(yaml)
   
 end
 
