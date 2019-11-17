@@ -1,8 +1,13 @@
 require "yaml"
 
 def load_library(string)
-  emo = YAML.load_file(string)
-  emo
+  hash = {get_meaning: [], get_emoticon: []}
+  lib = YAML.load_file(string)
+  lib.each {|key, value|
+    hash[get_meaning] << key
+    hash[get_emoticon] << value
+  end
+  hash
 end
 
 
