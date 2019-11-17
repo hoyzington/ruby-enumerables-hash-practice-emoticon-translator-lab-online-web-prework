@@ -6,7 +6,7 @@ def load_library(string)
   lib.each {|key, value|
     hash[get_meaning] << key
     hash[get_emoticon] << value
-  end
+  }
   hash
 end
 
