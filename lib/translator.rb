@@ -3,6 +3,7 @@ require "yaml"
 def load_library(string)
   lib = YAML.load_file(string)
   hash = {}
+  
   lib.each do |key, value|
     value.each do |eng, jap|
         hash[:get_meaning][jap] = key
