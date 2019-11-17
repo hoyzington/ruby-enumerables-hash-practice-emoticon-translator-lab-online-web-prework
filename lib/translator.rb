@@ -6,8 +6,8 @@ require "yaml"
 
 
 
-def load_library
-  emo = YAML.load_file("emoticons.yml")
+def load_library(string)
+  emo = YAML.load_file(string)
   emo
 end
 
