@@ -19,7 +19,9 @@ def get_japanese_emoticon(yaml, emo)
   i = 0
   while i < max
     if ref[:get_emoticon][i] == emo
-    return ref[:get_emoticon][i]
+      return ref[:get_emoticon][i]
+    end
+    i += 1
   end
   nil
 end
