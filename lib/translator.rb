@@ -31,4 +31,4 @@ def get_english_meaning(yaml, emo)
   
 end
 
-# "./lib/emoticons.yml"
+#  "./lib/emoticons.yml"
