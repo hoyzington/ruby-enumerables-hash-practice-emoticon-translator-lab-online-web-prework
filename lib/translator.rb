@@ -13,13 +13,16 @@ def load_library(string)
 end
 
 
-def get_japanese_emoticon(yaml, emoticon)
+def get_japanese_emoticon(yaml, emo)
   ref = load_library(yaml)
   
+  i = 0
+  while i < yaml.size 
+    if yaml[i] == emo
 end
 
 
-def get_english_meaning(yaml, emoticon)
+def get_english_meaning(yaml, emo)
   
 end
 
