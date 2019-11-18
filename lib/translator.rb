@@ -23,7 +23,7 @@ def get_japanese_emoticon(yaml, emo)
     end
     i += 1
   end
-  return 
+  return "Sorry, that emoticon was not found"
 end
 
 
