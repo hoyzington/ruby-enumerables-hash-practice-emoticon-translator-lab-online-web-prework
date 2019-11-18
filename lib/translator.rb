@@ -28,7 +28,16 @@ end
 
 
 def get_english_meaning(yaml, emo)
-  
+  ref = load_library(yaml)
+  max = yaml.size
+  i = 0
+  while i < max
+    if ref[:get_meaning].include?(emo)
+      return ref[:get_meaning][emo]
+    end
+    i += 1
+  end
+  return "Sorry, that emoticon was not found"
 end
 
 #  "./lib/emoticons.yml"
