@@ -15,11 +15,13 @@ end
 
 def get_japanese_emoticon(yaml, emo)
   ref = load_library(yaml)
-  max = yaml.size
-  i = 0
-  while i < max
+#  max = yaml.size
+#  i = 0
+#  while i < max
     if ref[:get_emoticon][emo] == true
-    return 
+    return ref[:get_emoticon][emo]
+  end
+  nil
 end
 
 
