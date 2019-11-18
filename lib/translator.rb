@@ -23,7 +23,7 @@ def get_japanese_emoticon(yaml, emo)
     end
     i += 1
   end
-  nil
+  return 
 end
 
 
