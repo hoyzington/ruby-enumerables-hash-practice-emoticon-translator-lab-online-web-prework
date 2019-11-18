@@ -18,7 +18,7 @@ def get_japanese_emoticon(yaml, emo)
   max = yaml.size
   i = 0
   while i < max
-    if ref[:get_emoticon] include?(emo)
+    if ref[:get_emoticon].include?(emo)
       return ref[:get_emoticon][emo]
     end
     i += 1
